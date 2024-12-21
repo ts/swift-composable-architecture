@@ -209,7 +209,7 @@ And then define a static function on the `SharedKey` protocol for creating your 
 persistence strategy:
 
 ```swift
-extension SharedReaderKey {
+extension SharedKey {
   public static func custom<Value>(/*...*/) -> Self
   where Self == CustomPersistence<Value> {
     CustomPersistence(/* ... */)
